@@ -1,5 +1,7 @@
 
-package Librerias;
+package mdcg.poo.proyecto.iiiparcial;
+
+import mdcg.poo.proyecto.iiiparcial.Compra;
 
 /**
  *
@@ -52,11 +54,6 @@ public class Inicio extends javax.swing.JFrame {
         bnCompra.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 bnCompraMouseClicked(evt);
-            }
-        });
-        bnCompra.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                bnCompraActionPerformed(evt);
             }
         });
 
@@ -130,12 +127,11 @@ public class Inicio extends javax.swing.JFrame {
 
     private void bnBitacoraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bnBitacoraMouseClicked
         // TODO add your handling code here:
+        Bitacoras bitacora = new Bitacoras();
+        bitacora.setVisible(true);
+        this.dispose();
        
     }//GEN-LAST:event_bnBitacoraMouseClicked
-
-    private void bnCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bnCompraActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_bnCompraActionPerformed
 
     private void bnCompraMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bnCompraMouseClicked
         // TODO add your handling code here:

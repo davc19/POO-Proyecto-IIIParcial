@@ -1,6 +1,5 @@
 
 package Librerias;
-import java.util.Date;
 
 /*
     * @serial : 201710080097.
@@ -8,11 +7,13 @@ import java.util.Date;
     * @version : Proyecto III Parcial.
 */
 
-public abstract class Bitacora 
+public class Bitacora 
 {
     private String Usuario;
-    private Date Fecha;
+    private String Fecha;
     private String Departamento;
+    private String Actividad;
+    private String Hora;
 
    //Setters
     public void setUsuario(String _usuario)
@@ -20,7 +21,7 @@ public abstract class Bitacora
         this.Usuario = _usuario;
     }
     
-    public void setFecha(Date _fecha)
+    public void setFecha(String _fecha)
     {
         this.Fecha = _fecha;
     }
@@ -29,6 +30,16 @@ public abstract class Bitacora
     {
         this.Departamento = _departamento;
     }
+
+     public void setActividad(String _actividad)
+     {
+        this.Actividad = _actividad;
+     }
+     
+     public void  setHora(String _hora)
+     {
+         this.Hora = _hora;
+     }
     
 
   //Getters
@@ -37,7 +48,7 @@ public abstract class Bitacora
         return this.Usuario;
     }
     
-    public Date getFecha()
+    public String getFecha()
     {
         return this.Fecha;
     }
@@ -47,6 +58,12 @@ public abstract class Bitacora
         return this.Departamento;
     }
     
-    abstract String getActividad();
-    abstract String getHora();
+     public String getActividad()
+     {
+         return this.Actividad;
+     }
+     public String  getHora()
+     {
+         return this.Hora;
+     }
 }

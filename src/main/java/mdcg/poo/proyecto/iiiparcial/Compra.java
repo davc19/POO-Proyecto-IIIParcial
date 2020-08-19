@@ -1,6 +1,7 @@
 
-package Librerias;
+package mdcg.poo.proyecto.iiiparcial;
 
+import Librerias.Productos;
 import javax.swing.table.DefaultTableModel;
 
 /**
