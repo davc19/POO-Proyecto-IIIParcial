@@ -12,6 +12,7 @@ public class Productos
     private String NoSerie;
     private String Descripcion;
     private int Cantidad;
+    private int precio;
     private String Proveedor;
     private String Caducidad;
     
@@ -34,6 +35,10 @@ public class Productos
     public void setProveedor(String _proveedor)
     {
         this.Proveedor = _proveedor;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
     }
 
     public void setCaducidad(String _caducidad)
@@ -60,6 +65,10 @@ public class Productos
     public String getProveedor()
     {
         return this.Proveedor;
+    }
+
+    public int getPrecio() {
+        return precio;
     }
 
     public String getCaducidad()
